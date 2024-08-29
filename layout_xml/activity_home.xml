@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/login_welcomebackground"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/textViewMyInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/my_inventory"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/textViewUserName"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/buttonListIcon"
+        android:layout_width="92dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/baseline_list_24"
+        app:layout_constraintEnd_toStartOf="@id/buttonProfileIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLinearLayout" />
+
+    <TextView
+        android:id="@+id/textViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonListIcon"
+        app:layout_constraintStart_toStartOf="@id/buttonListIcon"
+        app:layout_constraintEnd_toEndOf="@id/buttonListIcon" />
+
+    <ImageButton
+        android:id="@+id/buttonProfileIcon"
+        android:layout_width="92dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toStartOf="@id/buttonSMSIcon"
+        app:layout_constraintStart_toEndOf="@id/buttonListIcon"
+        app:layout_constraintTop_toBottomOf="@id/headerLinearLayout" />
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonProfileIcon"
+        app:layout_constraintStart_toStartOf="@id/buttonProfileIcon"
+        app:layout_constraintEnd_toEndOf="@id/buttonProfileIcon" />
+
+    <ImageButton
+        android:id="@+id/buttonSMSIcon"
+        android:layout_width="92dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/baseline_sms_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonProfileIcon"
+        app:layout_constraintTop_toBottomOf="@id/headerLinearLayout" />
+
+    <TextView
+        android:id="@+id/textViewSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonSMSIcon"
+        app:layout_constraintStart_toStartOf="@id/buttonSMSIcon"
+        app:layout_constraintEnd_toEndOf="@id/buttonSMSIcon" />
+
+
+    <ImageButton
+        android:id="@+id/buttonHelpIcon"
+        android:layout_width="92dp"
+        android:layout_height="95dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp"
+        android:src="@drawable/baseline_question_mark_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/buttonListIcon"
+        app:layout_constraintTop_toBottomOf="@id/buttonListIcon"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/textViewHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonHelpIcon"
+        app:layout_constraintStart_toStartOf="@id/buttonHelpIcon"
+        app:layout_constraintEnd_toEndOf="@id/buttonHelpIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
